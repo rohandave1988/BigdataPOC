@@ -29,9 +29,11 @@ INSERT INTO `transaction` (`accountnumber`, `referenceamount`, `status`, `bookin
 (6535355, '4000', 'Error', 'elwood@xyz.com', 'Debit','1833883231', '2017-07-10 12:30:32');
 
 2.) Open the Hbase shell using the following command and create a table:-
- hbase shell
+ 
+hbase shell
 
 3.) Run the below mentioned command in Hbase shell:-
+
 create ‘transaction’,’transaction_details’
 
 4.) Open a separate terminal and use this import command to insert data in Hbase in a separate command window:-
