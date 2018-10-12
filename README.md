@@ -1,8 +1,13 @@
 # BigdataPOC
 Steps to Run the POC:-
-1.) Open MySQL database command prompt:-
 
-mysql -uroot -pcloudera -hlocalhost  
+1.) Open the command prompt and enter the following commands to run the MySQL database and create the database/tables:-
+
+mysql -uroot -pcloudera -hlocalhost;  
+
+create db transaction;
+
+use transaction;
 
 CREATE TABLE `transaction` (
   `transactionid` int(10)   NOT NULL,
@@ -23,13 +28,14 @@ INSERT INTO `transaction` (`accountnumber`, `referenceamount`, `status`, `bookin
 (89483834, '1000', 'Transferred', 'evelin@xyz.com', 'Credit','1329995431', '2017-07-10 12:30:32'),
 (6535355, '4000', 'Error', 'elwood@xyz.com', 'Debit','1833883231', '2017-07-10 12:30:32');
 
-2.) Open the Hbase shell using the following command:-
+2.) Open the Hbase shell using the following command and create a table:-
  hbase shell
 
 3.) Run the below mentioned command in Hbase shell:-
 create ‘transaction’,’transaction_details’
 
 4.) Open a separate terminal and use this import command to insert data in Hbase in a separate command window:-
+
 sqoop import --connect jdbc:mysql://localhost/transaction --username root --password cloudera --table transaction --hbase-table transaction --column-family transaction_details --hbase-row-key transactionid -m 1  
 
 5.) Run the below mentioned command in Hbase Shell to check whether the data has been imported in the Hbase:-
@@ -37,6 +43,7 @@ sqoop import --connect jdbc:mysql://localhost/transaction --username root --pass
 scan 'transaction'
 
 6.) Start the Hbase Rest Server:-
+
 hbase rest start
 
 7.) Clone the Java code and Build the Micro Service code using the below command:-
