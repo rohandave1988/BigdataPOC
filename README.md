@@ -1,5 +1,4 @@
 # BigdataPOC
-Steps to Run the POC:-
 
 ## Flow Diagram
 
