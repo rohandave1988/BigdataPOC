@@ -11,13 +11,13 @@ import com.hbase.app.HbaseRestClient;
 
 @Controller
 public class RestControllerHbase {
-	
+
 	@RequestMapping(value = "/accounts/{accountId}", method = RequestMethod.GET)
 	@ResponseBody
-	public String retrieveCoursesForStudent(@PathVariable String accountId) throws IOException {
+	public String retrieveAccountInfo(@PathVariable String accountId) throws IOException {
 		HbaseRestClient restExample = new HbaseRestClient();
-		String transactionId = restExample.restClient(accountId);
-		return transactionId;
+		String accountInfo = restExample.restClient(accountId);
+		return accountInfo;
 	}
 
 }
