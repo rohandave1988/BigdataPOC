@@ -5,9 +5,15 @@ Steps to Run the POC:-
 
 ![image](https://user-images.githubusercontent.com/25721698/46984197-c6932400-d12f-11e8-9969-ad62c1855ce7.png)
 
-Download the Oracle VirtualBox and then download the Cloudera VM.
-Import the downloaded cloudera VM OVA file in the oracle virtual box.
-Start the Virtual Box by right clicking on the imported OVA file.
+## Steps to install Cloudera VM:-
+
+a.) Download the Oracle VirtualBox and then download the Cloudera VM.
+
+b.)Import the downloaded cloudera VM OVA file in the oracle virtual box.
+
+c.)Start the Virtual Box by right clicking on the imported OVA file.
+
+## Steps to run the POC:-
 
 1.) Open the command prompt and enter the following commands to run the MySQL database and create the database/tables:-
 
