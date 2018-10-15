@@ -1,8 +1,9 @@
 # BigdataPOC
 Steps to Run the POC:-
 
+## Flow Diagram
 
-
+![image](https://user-images.githubusercontent.com/25721698/46984197-c6932400-d12f-11e8-9969-ad62c1855ce7.png)
 
 Download the Oracle VirtualBox and then download the Cloudera VM.
 Import the downloaded cloudera VM OVA file in the oracle virtual box.
