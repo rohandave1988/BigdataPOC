@@ -1,6 +1,13 @@
 # BigdataPOC
 Steps to Run the POC:-
 
+
+
+
+Download the Oracle VirtualBox and then download the Cloudera VM.
+Import the downloaded cloudera VM OVA file in the oracle virtual box.
+Start the Virtual Box by right clicking on the imported OVA file.
+
 1.) Open the command prompt and enter the following commands to run the MySQL database and create the database/tables:-
 
 mysql -uroot -pcloudera -hlocalhost;  
