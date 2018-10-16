@@ -12,6 +12,12 @@ b.)Import the downloaded cloudera VM OVA file in the oracle virtual box.
 
 c.)Start the Virtual Box by right clicking on the imported OVA file.
 
+d.)Also please allocate more than 8GB to image imported by going in the settings.
+
+e.)Open a command prompt and enter the following command as this run all the service required to run the POC.
+
+sudo /home/cloudera/cloudera-manager --express --force
+
 ## Steps to run the POC:-
 
 1.) Open the command prompt and enter the following commands to run the MySQL database and create the database/tables:-
